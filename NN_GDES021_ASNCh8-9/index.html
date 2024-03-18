@@ -3,184 +3,217 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chapter 7 Assignment - Welcome to WVC</title>
+    <title>Chapter 8-9 Assignment - Welcome to WVC</title>
   </head>
   <body>
-    <h1>Hi, Welcome to WVC</h1>
+    <div style="border: 2px solid purple">
+      <h1>Hi, Welcome to WVC</h1>
+      <!-- BEGIN Username, Password, Submit button-->
+      <h2>Log in first to get the best use out of this site:</h2>
 
-    <!-- BEGIN Username, Password, Submit button-->
-    <h2>Log in first to get the best use out of this site:</h2>
+      <form action="">
+        <label for="username">Username:</label>
+        <input
+          type="text"
+          name="user"
+          placeholder="Username"
+          required="required"
+        /><br />
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          name="pass"
+          placeholder="Password"
+          required="required"
+        />
+        <br /><br />
+        <button>Submit</button>
+        <input type="hidden" name="submit" value="Submit" />
+      </form>
+      <!-- END Username, Password, Submit button-->
+    </div>
 
-    <form action="">
-      <label for="username">Username:</label>
-      <input
-        type="text"
-        name="user"
-        placeholder="Username"
-        required="required"
-      /><br />
-      <label for="password">Password:</label>
-      <input
-        type="password"
-        name="pass"
-        placeholder="Password"
-        required="required"
-      />
-      <br /><br />
-      <button>Submit</button>
-      <input type="hidden" name="submit" value="Submit" />
-    </form>
-
-    <!-- END Username, Password, Submit button-->
-
-    <br />
+    <div>
+      <h2>
+        After you've logged in, <a href="video.html">CLICK HERE</a> to watch a
+        video or listen to some music!
+      </h2>
+    </div>
 
     <!-- insert image of a generic college using the <img> tag as done in previous assignment  - grab image from “unsplash” (be sure to create your "images" folder in the root directory of your assignment's folder) and resize the image using height=”600” width=”450”  basically use exact code found on page 100 -->
 
     <img
+      style="border: 2px solid orange"
       src="ch7 images/collegecampus.jpg"
       alt="college campus"
       height="600"
       width="950"
     />
 
-    <h2>About the School</h2>
-    <p>
-      We are the best at what we do! From the arts to the sciences, we've got
-      you covered. Here you will find all the information you need:
-      <br /><br />
-      Course list
-      <br />
-      How to sign up for classes
-      <br />
-      Resource centers
-      <br />
-      Faculty list
-      <br />
-      Campus map
-    </p>
-
-    <!-- BEGIN insert search bar and submit button-->
-
-    <form action="">
+    <div style="border: 2px solid green">
+      <h2>About the School</h2>
       <p>
-        Still need more information? No worries! Feel free to use our search bar
-        below!:
+        We are the best at what we do! From the arts to the sciences, we've got
+        you covered. Here you will find all the information you need:
+        <br /><br />
+        Course list
+        <br />
+        How to sign up for classes
+        <br />
+        Resource centers
+        <br />
+        Faculty list
+        <br />
+        Campus map
       </p>
-      <input type="search" name="search" />
-      <button>Submit</button>
-      <input type="hidden" name="submit" value="Submit" />
-    </form>
+    </div>
 
-    <!-- END insert search bar and submit button -->
+    <div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3175.337044478362!2d-122.01262422338905!3d37.26343397211866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808e4a96742ee933%3A0xdde18e9972ad1dfb!2sWest%20Valley%20College!5e0!3m2!1sen!2sus!4v1710730963816!5m2!1sen!2sus"
+        width="450"
+        height="350"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
 
-    <br />
-    <!-- BEGIN insert mailing list and submit button-->
-    <h2>Join our Mailing List!</h2>
-    <form action="">
-      <p>
-        If you join our mailing list, you will get exclusive information
-        regarding upcoming events, assignments, and well... more events! Be the
-        first to be “in the know”. We promise not to spam you. <em>Really</em>.
-      </p>
-      <input type="email" name="email" />
-      <button>Submit</button>
-      <input type="hidden" name="submit" value="Submit" />
-    </form>
+    <div style="border: 2px solid pink">
+      <!-- BEGIN insert search bar and submit button-->
+      <form action="">
+        <p>
+          Still need more information? No worries! Feel free to use our search
+          bar below!:
+        </p>
+        <input type="search" name="search" />
+        <button>Submit</button>
+        <input type="hidden" name="submit" value="Submit" />
+      </form>
+      <!-- END insert search bar and submit button -->
+    </div>
 
-    <!-- END insert mailing list and submit button-->
+    <div style="border: 2px solid red">
+      <!-- BEGIN insert mailing list and submit button-->
+      <h2>Join our Mailing List!</h2>
+      <form action="">
+        <p>
+          If you join our mailing list, you will get exclusive information
+          regarding upcoming events, assignments, and well... more events! Be
+          the first to be “in the know”. We promise not to spam you.
+          <em>Really</em>.
+        </p>
+        <input type="email" name="email" />
+        <button>Submit</button>
+        <input type="hidden" name="submit" value="Submit" />
+      </form>
+      <!-- END insert mailing list and submit button-->
+    </div>
 
-    <br />
-    <h2>Answer a few questions for us!</h2>
+    <div style="border: 2px solid blue">
+      <h2>Answer a few questions for us!</h2>
+      <!-- BEGIN streaming service checkbox-->
+      <form action="">
+        <p>
+          What kind of music applications do you like using while studying or on
+          the go? <br />
+          You can choose more than one music streaming application:
+        </p>
+        <input
+          type="checkbox"
+          name="service"
+          value="itunes"
+          checked="checked"
+        />
+        iTunes <input type="checkbox" name="service" value="lastfm" /> Last.fm
+        <input type="checkbox" name="service" value="spotify" /> Spotify
+        <input type="checkbox" name="service" value="not listed" /> Other/Not
+        Listed
+      </form>
+      <!-- End streaming service checkbox-->
+    </div>
 
-    <!-- BEGIN streaming service checkbox-->
-    <form action="">
-      <p>
-        What kind of music applications do you like using while studying or on
-        the go? <br />
-        You can choose more than one music streaming application:
-      </p>
-      <input type="checkbox" name="service" value="itunes" checked="checked" />
-      iTunes <input type="checkbox" name="service" value="lastfm" /> Last.fm
-      <input type="checkbox" name="service" value="spotify" /> Spotify
-      <input type="checkbox" name="service" value="not listed" /> Other/Not
-      Listed
-    </form>
+    <div style="border: 2px solid black">
+      <!-- BEGIN favorite style music radio buttons-->
+      <form action="http://www.example.com/profile.php">
+        <p>Please select your favorite genre:</p>
+        <input type="radio" name="genre" value="rock" checked="checked" /> Rock
+        <input type="radio" name="genre" value="pop" /> Pop
+        <input type="radio" name="genre" value="jazz" /> Jazz
+      </form>
+      <!-- END favorite style music radio buttons-->
+    </div>
 
-    <!-- End streaming service checkbox-->
-    <br />
-    <!-- BEGIN favorite style music radio buttons-->
-    <form action="http://www.example.com/profile.php">
-      <p>Please select your favorite genre:</p>
-      <input type="radio" name="genre" value="rock" checked="checked" /> Rock
-      <input type="radio" name="genre" value="pop" /> Pop
-      <input type="radio" name="genre" value="jazz" /> Jazz
-    </form>
-    <!-- END favorite style music radio buttons-->
+    <div style="border: 2px solid orange">
+      <!--  BEGIN insert a Drop Down List Box -->
+      <form action="http://www.example.com/profile.php">
+        <p>
+          Are you a MacOS, Windows, or Linux user? (As you browse the
+          internet,which kind of computer OS are you using?)
+        </p>
+        <select name="devices">
+          <option value="mac">MacOS</option>
+          <option value="windows">Windows</option>
+          <option value="linux">Linux</option>
+        </select>
+      </form>
+      <!--  END insert a Drop Down List Box -->
+    </div>
 
-    <br />
+    <div style="border: 2px solid purple">
+      <!--  BEGIN add profile pic -->
+      <h2>Add an image for your profile!</h2>
+      <p>View an example of a profile picture below:</p>
+      <img
+        src="ch7 images/profilepic.jpg"
+        alt="profile pic"
+        height="600"
+        width="425"
+      />
+      <form action="" method="post">
+        <h3>Upload your own profile picture:</h3>
+        <input type="file" name="user-pic" /><br />
+        <input type="submit" value="Upload" />
+      </form>
+      <!--  END add profile pic -->
+    </div>
 
-    <!--  BEGIN insert a Drop Down List Box -->
-    <form action="http://www.example.com/profile.php">
-      <p>
-        Are you a MacOS, Windows, or Linux user? (As you browse the
-        internet,which kind of computer OS are you using?)
-      </p>
-      <select name="devices">
-        <option value="mac">MacOS</option>
-        <option value="windows">Windows</option>
-        <option value="linux">Linux</option>
-      </select>
-    </form>
-    <!--  END insert a Drop Down List Box -->
-    <br />
-    <!--  BEGIN add profile pic -->
-    <h2>Add an image for your profile!</h2>
-    <p>View an example of a profile picture below:</p>
-    <img
-      src="ch7 images/profilepic.jpg"
-      alt="profile pic"
-      height="600"
-      width="425"
-    />
-    <form action="" method="post">
-      <h3>Upload your own profile picture:</h3>
-      <input type="file" name="user-pic" /><br />
-      <input type="submit" value="Upload" />
-    </form>
-    <!--  END add profile pic -->
-    <br />
-    <!--  BEGIN contact -->
-    <h2>Contact?</h2>
-    <fieldset>
-      <legend>Contact details</legend>
-      <label
-        >First Name:<br />
-        <input type="text" name="firstname" placeholder="John"
-      /></label>
-      <br />
-      <label
-        >Last Name:<br />
-        <input type="text" name="lastname" placeholder="Doe"
-      /></label>
-      <br />
-      <label
-        >Email:<br />
-        <input type="email" name="email" placeholder="johndoe@email.com"
-      /></label>
-      <br /><br />
-      <button>Submit</button>
-      <input type="hidden" name="submit" value="Submit" />
-    </fieldset>
-    <!--  END contact -->
-    <br />
-    <!--  BEGIN date -->
-    <h2>Set a date when you can visit the campus!</h2>
-    <form action="" method="post">
-      <label for="username">Select date:</label>
-      <input type="date" name="depart" />
-      <input type="submit" value="Submit" />
-    </form>
-    <!--  END date -->
+    <div>
+      <!--  BEGIN contact -->
+      <h2>Contact?</h2>
+      <fieldset>
+        <legend>Contact details</legend>
+        <label
+          >First Name:<br />
+          <input type="text" name="firstname" placeholder="John"
+        /></label>
+        <br />
+        <label
+          >Last Name:<br />
+          <input type="text" name="lastname" placeholder="Doe"
+        /></label>
+        <br />
+        <label
+          >Email:<br />
+          <input type="email" name="email" placeholder="johndoe@email.com"
+        /></label>
+        <br /><br />
+        <button>Submit</button>
+        <input type="hidden" name="submit" value="Submit" />
+      </fieldset>
+      <!--  END contact -->
+    </div>
+
+    <div>
+      <!--  BEGIN date -->
+      <h2>Set a date when you can visit the campus!</h2>
+      <form action="" method="post">
+        <label for="username">Select date:</label>
+        <input type="date" name="depart" />
+        <input type="submit" value="Submit" />
+      </form>
+      <!--  END date -->
+    </div>
   </body>
 </html>
