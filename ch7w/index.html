@@ -7,11 +7,10 @@
   </head>
   <body>
     <h1>Hi, Welcome to WVC</h1>
-    <p>Log in first to get the best use out of this site:</p>
-
-    <br />
 
     <!-- BEGIN Username, Password, Submit button-->
+    <h2>Log in first to get the best use out of this site:</h2>
+
     <form action="">
       <label for="username">Username:</label>
       <input
@@ -21,147 +20,167 @@
         required="required"
       /><br />
       <label for="password">Password:</label>
-      <input type="password" name="pass" required="required" /><br />
-    </form>
-
-    <form action="">
+      <input
+        type="password"
+        name="pass"
+        placeholder="Password"
+        required="required"
+      />
+      <br /><br />
       <button>Submit</button>
       <input type="hidden" name="submit" value="Submit" />
     </form>
+
     <!-- END Username, Password, Submit button-->
 
     <br />
-    <br />
-    <br />
 
-    <form action="http://www.example.com/comments.php">
-      <p>What did you think of this gig?</p>
-      <textarea
-        name="comments"
-        cols="20"
-        rows="4"
-        placeholder="Enter your comments..."
-      ></textarea>
+    <!-- insert image of a generic college using the <img> tag as done in previous assignment  - grab image from “unsplash” (be sure to create your "images" folder in the root directory of your assignment's folder) and resize the image using height=”600” width=”450”  basically use exact code found on page 100 -->
+
+    <img
+      src="ch7 images/collegecampus.jpg"
+      alt="college campus"
+      height="600"
+      width="950"
+    />
+
+    <h2>About the School</h2>
+    <p>
+      We are the best at what we do! From the arts to the sciences, we've got
+      you covered. Here you will find all the information you need:
+      <br /><br />
+      Course list
+      <br />
+      How to sign up for classes
+      <br />
+      Resource centers
+      <br />
+      Faculty list
+      <br />
+      Campus map
+    </p>
+
+    <!-- BEGIN insert search bar and submit button-->
+
+    <form action="">
+      <p>
+        Still need more information? No worries! Feel free to use our search bar
+        below!:
+      </p>
+      <input type="search" name="search" />
+      <button>Submit</button>
+      <input type="hidden" name="submit" value="Submit" />
     </form>
 
-    <br />
-    <br />
-    <br />
+    <!-- END insert search bar and submit button -->
 
+    <br />
+    <!-- BEGIN insert mailing list and submit button-->
+    <h2>Join our Mailing List!</h2>
+    <form action="">
+      <p>
+        If you join our mailing list, you will get exclusive information
+        regarding upcoming events, assignments, and well... more events! Be the
+        first to be “in the know”. We promise not to spam you. <em>Really</em>.
+      </p>
+      <input type="email" name="email" />
+      <button>Submit</button>
+      <input type="hidden" name="submit" value="Submit" />
+    </form>
+
+    <!-- END insert mailing list and submit button-->
+
+    <br />
+    <h2>Answer a few questions for us!</h2>
+
+    <!-- BEGIN streaming service checkbox-->
+    <form action="">
+      <p>
+        What kind of music applications do you like using while studying or on
+        the go? <br />
+        You can choose more than one music streaming application:
+      </p>
+      <input type="checkbox" name="service" value="itunes" checked="checked" />
+      iTunes <input type="checkbox" name="service" value="lastfm" /> Last.fm
+      <input type="checkbox" name="service" value="spotify" /> Spotify
+      <input type="checkbox" name="service" value="not listed" /> Other/Not
+      Listed
+    </form>
+
+    <!-- End streaming service checkbox-->
+    <br />
+    <!-- BEGIN favorite style music radio buttons-->
     <form action="http://www.example.com/profile.php">
       <p>Please select your favorite genre:</p>
-      <br />
       <input type="radio" name="genre" value="rock" checked="checked" /> Rock
       <input type="radio" name="genre" value="pop" /> Pop
       <input type="radio" name="genre" value="jazz" /> Jazz
     </form>
+    <!-- END favorite style music radio buttons-->
 
     <br />
-    <br />
-    <br />
 
+    <!--  BEGIN insert a Drop Down List Box -->
     <form action="http://www.example.com/profile.php">
-      <p>Please select your favorite music service(s):</p>
-      <br />
-      <input type="checkbox" name="service" value="itunes" checked="checked" />
-      iTunes <input type="checkbox" name="service" value="lastfm" /> Last.fm
-      <input type="checkbox" name="service" value="spotify" /> Spotify
-    </form>
-
-    <br />
-    <br />
-    <br />
-
-    <form action="http://www.example.com/profile.php">
-      <p>What device do you listen to music on?</p>
+      <p>
+        Are you a MacOS, Windows, or Linux user? (As you browse the
+        internet,which kind of computer OS are you using?)
+      </p>
       <select name="devices">
-        <option value="ipod">iPod</option>
-        <option value="radio">Radio</option>
-        <option value="computer">Computer</option>
+        <option value="mac">MacOS</option>
+        <option value="windows">Windows</option>
+        <option value="linux">Linux</option>
       </select>
     </form>
-
+    <!--  END insert a Drop Down List Box -->
     <br />
-    <br />
-    <br />
-
-    <form action="http://www.example.com/upload.php" method="post">
-      <p>Upload your song in MP3 format?</p>
-      <input type="file" name="user-song" /><br />
+    <!--  BEGIN add profile pic -->
+    <h2>Add an image for your profile!</h2>
+    <p>View an example of a profile picture below:</p>
+    <img
+      src="ch7 images/profilepic.jpg"
+      alt="profile pic"
+      height="600"
+      width="425"
+    />
+    <form action="" method="post">
+      <h3>Upload your own profile picture:</h3>
+      <input type="file" name="user-pic" /><br />
       <input type="submit" value="Upload" />
     </form>
-
+    <!--  END add profile pic -->
     <br />
-    <br />
-    <br />
-
-    <form action="http://www.example.com/subscribe.php">
-      <p>Subscribe to our email list:</p>
-      <input type="email" name="email" /><br />
-      <input type="submit" name="subscribe" value="Subscribe" />
-    </form>
-
-    <br />
-    <br />
-    <br />
-
-    <form action="http://www.example.com/add.php">
-      <button>Click Me</button>
-      <input type="hidden" name="bookmark" value="lyrics" />
-    </form>
-
-    <br />
-    <br />
-    <br />
-
-    <label>Age: <input type="text" name="age" /></label>
-    <br />
-    Gender:
-    <input id="female" type="radio" name="gender" value="f" />
-    <label for="female">Female</label>
-    <input id="male" type="radio" name="gender" value="m" />
-    <label for="male">Male</label>
-
-    <br />
-    <br />
-    <br />
-
+    <!--  BEGIN contact -->
+    <h2>Contact?</h2>
     <fieldset>
       <legend>Contact details</legend>
       <label
+        >First Name:<br />
+        <input type="text" name="firstname" placeholder="John"
+      /></label>
+      <br />
+      <label
+        >Last Name:<br />
+        <input type="text" name="lastname" placeholder="Doe"
+      /></label>
+      <br />
+      <label
         >Email:<br />
-        <input type="text" name="email"
+        <input type="email" name="email" placeholder="johndoe@email.com"
       /></label>
-      <br />
-      <label
-        >Mobile:<br />
-        <input type="text" name="mobile"
-      /></label>
-      <br />
-      <label
-        >Telephone:<br />
-        <input type="text" name="telephone"
-      /></label>
+      <br /><br />
+      <button>Submit</button>
+      <input type="hidden" name="submit" value="Submit" />
     </fieldset>
-
+    <!--  END contact -->
     <br />
-    <br />
-    <br />
-
-    <form action="http://www.example.com/bookings" method="post">
-      <label for="username">Departure date:</label>
+    <!--  BEGIN date -->
+    <h2>Set a date when you can visit the campus!</h2>
+    <form action="" method="post">
+      <label for="username">Select date:</label>
       <input type="date" name="depart" />
       <input type="submit" value="Submit" />
     </form>
-
-    <br />
-    <br />
-    <br />
-
-    <form action="http://www.example.org/search.php">
-      <p>Search:</p>
-      <input type="search" name="search" />
-      <input type="submit" value="submit" />
-    </form>
+    <!--  END date -->
   </body>
 </html>
