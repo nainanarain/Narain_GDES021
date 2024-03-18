@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 7 Assignment - Welcome to WVC</title>
+  </head>
+  <body>
+    <h1>Hi, Welcome to WVC</h1>
+    <p>Log in first to get the best use out of this site:</p>
+
+    <br />
+
+    <!-- BEGIN Username, Password, Submit button-->
+    <form action="">
+      <label for="username">Username:</label>
+      <input
+        type="text"
+        name="user"
+        placeholder="Username"
+        required="required"
+      /><br />
+      <label for="password">Password:</label>
+      <input type="password" name="pass" required="required" /><br />
+    </form>
+
+    <form action="">
+      <button>Submit</button>
+      <input type="hidden" name="submit" value="Submit" />
+    </form>
+    <!-- END Username, Password, Submit button-->
+
+    <br />
+    <br />
+    <br />
+
+    <form action="http://www.example.com/comments.php">
+      <p>What did you think of this gig?</p>
+      <textarea
+        name="comments"
+        cols="20"
+        rows="4"
+        placeholder="Enter your comments..."
+      ></textarea>
+    </form>
+
+    <br />
+    <br />
+    <br />
+
+    <form action="http://www.example.com/profile.php">
+      <p>Please select your favorite genre:</p>
+      <br />
+      <input type="radio" name="genre" value="rock" checked="checked" /> Rock
+      <input type="radio" name="genre" value="pop" /> Pop
+      <input type="radio" name="genre" value="jazz" /> Jazz
+    </form>
+
+    <br />
+    <br />
+    <br />
+
+    <form action="http://www.example.com/profile.php">
+      <p>Please select your favorite music service(s):</p>
+      <br />
+      <input type="checkbox" name="service" value="itunes" checked="checked" />
+      iTunes <input type="checkbox" name="service" value="lastfm" /> Last.fm
+      <input type="checkbox" name="service" value="spotify" /> Spotify
+    </form>
+
+    <br />
+    <br />
+    <br />
+
+    <form action="http://www.example.com/profile.php">
+      <p>What device do you listen to music on?</p>
+      <select name="devices">
+        <option value="ipod">iPod</option>
+        <option value="radio">Radio</option>
+        <option value="computer">Computer</option>
+      </select>
+    </form>
+
+    <br />
+    <br />
+    <br />
+
+    <form action="http://www.example.com/upload.php" method="post">
+      <p>Upload your song in MP3 format?</p>
+      <input type="file" name="user-song" /><br />
+      <input type="submit" value="Upload" />
+    </form>
+
+    <br />
+    <br />
+    <br />
+
+    <form action="http://www.example.com/subscribe.php">
+      <p>Subscribe to our email list:</p>
+      <input type="email" name="email" /><br />
+      <input type="submit" name="subscribe" value="Subscribe" />
+    </form>
+
+    <br />
+    <br />
+    <br />
+
+    <form action="http://www.example.com/add.php">
+      <button>Click Me</button>
+      <input type="hidden" name="bookmark" value="lyrics" />
+    </form>
+
+    <br />
+    <br />
+    <br />
+
+    <label>Age: <input type="text" name="age" /></label>
+    <br />
+    Gender:
+    <input id="female" type="radio" name="gender" value="f" />
+    <label for="female">Female</label>
+    <input id="male" type="radio" name="gender" value="m" />
+    <label for="male">Male</label>
+
+    <br />
+    <br />
+    <br />
+
+    <fieldset>
+      <legend>Contact details</legend>
+      <label
+        >Email:<br />
+        <input type="text" name="email"
+      /></label>
+      <br />
+      <label
+        >Mobile:<br />
+        <input type="text" name="mobile"
+      /></label>
+      <br />
+      <label
+        >Telephone:<br />
+        <input type="text" name="telephone"
+      /></label>
+    </fieldset>
+
+    <br />
+    <br />
+    <br />
+
+    <form action="http://www.example.com/bookings" method="post">
+      <label for="username">Departure date:</label>
+      <input type="date" name="depart" />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <br />
+    <br />
+    <br />
+
+    <form action="http://www.example.org/search.php">
+      <p>Search:</p>
+      <input type="search" name="search" />
+      <input type="submit" value="submit" />
+    </form>
+  </body>
+</html>
