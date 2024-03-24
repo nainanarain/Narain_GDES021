@@ -1,0 +1,50 @@
+h1 {
+  color: blue;
+}
+
+p {
+  color: blueviolet;
+}
+
+li a {
+  color: brown;
+}
+
+p a {
+  color: green;
+}
+
+.clouds {
+  color: aqua;
+}
+
+#cars {
+  font-size: 20px;
+}
+
+span,
+h3,
+h4 {
+  color: pink;
+  font-size: 16px;
+}
+
+h3.heading {
+  color: rosybrown;
+}
+
+p {
+  color: plum;
+}
+
+p.drums {
+  color: yellowgreen;
+}
+
+.drums {
+  color: cornflowerblue;
+}
+
+#h5tag {
+  font-size: 32px;
+}

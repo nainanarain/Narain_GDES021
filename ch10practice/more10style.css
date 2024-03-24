@@ -1,0 +1,10 @@
+.div1 {
+  font-size: 45px;
+  border: 2px solid pink;
+  color: powderblue;
+}
+
+h1 {
+  border: inherit;
+  color: inherit;
+}
