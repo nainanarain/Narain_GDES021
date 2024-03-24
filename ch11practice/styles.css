@@ -1,0 +1,14 @@
+.section1 {
+  background-color: rgba(25, 57, 97);
+  background-color: rgba(25, 57, 97, 0.753);
+}
+
+h1 {
+  color: white;
+  background-color: #5b9;
+  opacity: 0.75;
+}
+
+p {
+  color: white;
+}
