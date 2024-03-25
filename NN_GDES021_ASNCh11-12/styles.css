@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Roboto:wght@100;300;400&display=swap");
 
 html {
   font-family: Roboto;
@@ -6,6 +7,8 @@ html {
 
 h1 {
   text-align: center;
+  font-family: Dongle;
+  font-size: 50px;
 }
 ul {
   list-style-type: none;
@@ -18,11 +21,22 @@ a {
   text-align: right;
 }
 
-.centerimage {
+img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
-  max-width: 100%;
-  height: auto;
+}
+
+.bio {
+  font-size: 16px;
+  background-color: pink;
+  color: white;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.contact {
+  text-align: center;
+  font-family: Dongle;
+  font-size: 48px;
+  color: pink;
 }
