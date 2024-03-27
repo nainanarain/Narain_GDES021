@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Roboto:wght@100;300;400&display=swap");
+
+html {
+  font-family: Roboto;
+}
+
+h1 {
+  text-align: center;
+  font-family: Dongle;
+  font-size: 50px;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+.rightalignlist {
+  text-align: right;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bio {
+  font-size: 16px;
+  background-color: pink;
+  color: white;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.contact {
+  text-align: center;
+  font-family: Dongle;
+  font-size: 48px;
+  color: pink;
+}
