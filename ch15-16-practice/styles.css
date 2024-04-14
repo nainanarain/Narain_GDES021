@@ -1,0 +1,44 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+/*body {
+  background: rgb(186, 198, 243);
+  background: linear-gradient(
+    90deg,
+    rgba(186, 198, 243, 1) 0%,
+    rgba(247, 184, 212, 1) 100%
+  );
+}
+*/
+
+body {
+  background: url("imgs/img2.png") no-repeat fixed center center;
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+}
+
+.starting-image {
+  border: 1px solid black;
+  width: 600px;
+  height: 600px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.div1 {
+  display: flex;
+  justify-content: center;
+}
+
+.second-image {
+  border: 1px solid black;
+  width: 600px;
+  height: 600px;
+}

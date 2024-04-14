@@ -1,0 +1,48 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: url("https://www.icegif.com/wp-content/uploads/2022/03/icegif-581.gif")
+    no-repeat fixed center center;
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  margin: 100px;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+  box-shadow: 2px 2px 4px whitesmoke;
+}
+
+.div1 {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+.div2 {
+  width: 400px;
+  border: 1px solid rgb(254, 217, 242);
+  background-color: rgba(181, 112, 149, 0.5);
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  text-shadow: 1px 1px 1px rgb(216, 72, 156);
+  text-align: center;
+}
+
+p {
+  color: rgb(254, 217, 242);
+}
