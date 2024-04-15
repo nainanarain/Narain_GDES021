@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Roboto:wght@100;300;400&display=swap");
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+/*****FONT STYLE*****/
+html {
+  font-family: Roboto;
+}
+/*****FONT STYLE*****/
+
+body {
+  background: url("https://www.icegif.com/wp-content/uploads/2022/03/icegif-581.gif")
+    no-repeat fixed center center;
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  margin: 50px;
+  margin-top: 75px;
+  font-family: Dongle;
+  color: rgb(128, 145, 216);
+  text-shadow: 1px 1px 1px white;
+  font-size: 92px;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+  box-shadow: 2px 2px 4px whitesmoke;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+  flex-flow: row wrap;
+  padding: 5%;
+}
+
+.img-box {
+  margin: 1%;
+  margin-bottom: 5%;
+}
+
+.div2 {
+  width: 500px;
+  border: 1px solid rgb(255, 228, 247);
+  background-color: rgba(143, 103, 143, 0.5);
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 75px;
+  text-shadow: 1px 1px 1px rgb(194, 64, 140);
+  text-align: center;
+}
+
+p {
+  color: rgb(255, 228, 247);
+}
+
+/****************************** THIS IS FOR TABLETS ******************************/
+
+@media (min-width: 581px) and (max-width: 868px) {
+  h1 {
+    text-align: center;
+    margin: 50px;
+    margin-top: 75px;
+    font-family: Dongle;
+    color: rgb(128, 145, 216);
+    text-shadow: 1px 1px 1px white;
+    font-size: 80px;
+  }
+
+  .div2 {
+    width: 400px;
+    border: 1px solid rgb(255, 228, 247);
+    background-color: rgba(143, 103, 143, 0.5);
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 75px;
+    text-shadow: 1px 1px 1px rgb(194, 64, 140);
+    text-align: center;
+  }
+}
+
+/****************************** THIS IS FOR TABLETS ******************************/
+
+/****************************** THIS IS FOR MOBILE ******************************/
+
+@media (max-width: 580px) {
+  h1 {
+    text-align: center;
+    margin: 50px;
+    margin-top: 75px;
+    font-family: Dongle;
+    color: rgb(128, 145, 216);
+    text-shadow: 1px 1px 1px white;
+    font-size: 64px;
+  }
+
+  .div2 {
+    width: 300px;
+    border: 1px solid rgb(255, 228, 247);
+    background-color: rgba(143, 103, 143, 0.5);
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 75px;
+    text-shadow: 1px 1px 1px rgb(194, 64, 140);
+    text-align: center;
+  }
+}
+
+/****************************** THIS IS FOR MOBILE ******************************/
