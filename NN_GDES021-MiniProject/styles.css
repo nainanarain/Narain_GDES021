@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Roboto:wght@100;300;400&display=swap");
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: Roboto;
+}
+
+*,
+header,
+footer,
+.div1,
+.div2,
+.div3,
+.div4 {
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+header,
+footer {
+  font-weight: 400;
+  text-align: center;
+  float: left;
+  height: 300px;
+  width: 100%;
+  border: 2px solid black;
+  background: #2057a3;
+}
+
+.div1 {
+  float: left;
+  height: 500px;
+  width: 20%;
+  border: 2px solid black;
+  background: #6289c0;
+}
+
+.div2 {
+  float: left;
+  height: 500px;
+  width: 40%;
+  border: 2px solid black;
+  background: #80a3d5;
+}
+
+.div3 {
+  float: left;
+  height: 500px;
+  width: 20%;
+  border: 2px solid black;
+  background: #96b3dc;
+}
+
+.div4 {
+  float: left;
+  height: 500px;
+  width: 20%;
+  border: 2px solid black;
+  background: #cbdaf0;
+}
+
+/****************************** THIS IS FOR TABLETS ******************************/
+
+@media (min-width: 581px) and (max-width: 868px) {
+  header,
+  footer {
+    font-weight: 400;
+    text-align: center;
+    float: left;
+    height: 300px;
+    width: 100%;
+    border: 2px solid black;
+    background: #5920a3;
+  }
+
+  .div1 {
+    float: left;
+    height: 500px;
+    width: 33.3%;
+    border: 2px solid black;
+    background: #8362c0;
+  }
+
+  .div2 {
+    float: left;
+    height: 500px;
+    width: 33.3%;
+    border: 2px solid black;
+    background: #9b7dd3;
+  }
+
+  .div3 {
+    float: left;
+    height: 500px;
+    width: 33.3%;
+    border: 2px solid black;
+    background: #b59de1;
+  }
+
+  .div4 {
+    float: left;
+    height: 500px;
+    width: 100%;
+    border: 2px solid black;
+    background: #d2bdf9;
+  }
+}
+
+/****************************** THIS IS FOR TABLETS ******************************/
+
+/****************************** THIS IS FOR MOBILE ******************************/
+
+@media (max-width: 580px) {
+  header,
+  footer {
+    font-weight: 400;
+    text-align: center;
+    float: left;
+    height: 300px;
+    width: 100%;
+    border: 2px solid black;
+    background: #a32064;
+  }
+
+  .div1 {
+    float: left;
+    height: 500px;
+    width: 100%;
+    border: 2px solid black;
+    background: #c24787;
+  }
+
+  .div2 {
+    float: left;
+    height: 500px;
+    width: 50%;
+    border: 2px solid black;
+    background: #d25c99;
+  }
+
+  .div3 {
+    float: left;
+    height: 500px;
+    width: 50%;
+    border: 2px solid black;
+    background: #ed81b9;
+  }
+
+  .div4 {
+    float: left;
+    height: 500px;
+    width: 100%;
+    border: 2px solid black;
+    background: #f69bca;
+  }
+}
+/****************************** THIS IS FOR MOBILE ******************************/
