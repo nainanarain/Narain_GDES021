@@ -16,6 +16,7 @@ html {
 /*****FORMATING FOR NAV BAR*****/
 nav {
   text-align: center;
+  margin: 50px;
   margin-bottom: 75px;
   font-size: 25px;
 }
@@ -47,29 +48,45 @@ a:active {
 /*****FORMATING FOR NAV BAR*****/
 
 h1 {
-  font-size: 50px;
-  border-top: 5px solid whitesmoke;
-  border-bottom: 5px solid whitesmoke;
-  padding: 20px;
   text-align: center;
-  margin: 5% 20%;
+  margin: 50px;
+  margin-top: 75px;
+  font-family: Dongle;
+  color: rgb(128, 145, 216);
+  font-size: 92px;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  margin: 50px auto;
+  width: 75%;
+  background-color: lavenderblush;
+  vertical-align: top;
   border-radius: 10px;
 }
 
-img {
-  height: 550px;
-  width: 375px;
-  display: block;
-  margin: auto;
-  box-shadow: 5px 5px 5px 5px #777777;
+.profile-pic {
+  height: 500px;
+  width: 340px;
+  float: left;
+  margin: 5%;
+  padding: 1%;
+}
+
+.intro {
+  font-size: 30px;
+  color: rgb(107, 74, 74);
+  margin: 1%;
+  padding: 1%;
 }
 
 .info {
   font-size: 20px;
-}
-
-.listitems {
-  list-style-type: none;
 }
 
 .bio {
@@ -77,6 +94,32 @@ img {
   background-color: lavenderblush;
   color: rgb(175, 131, 131);
   text-shadow: 2px 2px 4px #ccabab;
+}
+
+.gallery {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+  flex-flow: row wrap;
+  padding: 5%;
+}
+
+.img-box {
+  width: 300px;
+  height: 435px;
+  margin: 1%;
+  margin-bottom: 5%;
+}
+
+.div2 {
+  width: 700px;
+  background-color: lavenderblush;
+  color: rgb(141, 105, 105);
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .contact {
@@ -99,24 +142,23 @@ footer {
 
 /****************************** THIS IS FOR TABLETS ******************************/
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 581px) and (max-width: 868px) {
   h1 {
-    font-size: 40px;
+    font-size: 75px;
   }
+  /**
   p {
     font-size: 15px;
   }
+  **/
 
-  img {
+  .profile-pic {
     height: 450px;
     width: 300px;
-    display: block;
-    margin: auto;
-    box-shadow: 5px 5px 5px 5px #777777;
   }
 
-  .info {
-    font-size: 15px;
+  .intro {
+    font-size: 20px;
   }
 
   .contact {
@@ -125,33 +167,43 @@ footer {
     font-size: 38px;
     color: pink;
   }
+
+  .div2 {
+    width: 450px;
+  }
 }
 /****************************** THIS IS FOR TABLETS ******************************/
 
 /****************************** THIS IS FOR MOBILE ******************************/
 
-@media (max-width: 480px) {
+@media (max-width: 580px) {
   h1 {
-    font-size: 25px;
+    font-size: 40px;
   }
+
+  /**
   p {
     font-size: 12px;
   }
-  img {
-    height: 300px;
-    width: 205px;
-    display: block;
-    margin: auto;
-    box-shadow: 5px 5px 5px 5px #777777;
+  **/
+
+  .profile-pic {
+    height: 400px;
+    width: 260px;
   }
-  .info {
-    font-size: 12px;
+
+  .intro {
+    font-size: 16px;
   }
+
   .contact {
     text-align: center;
     font-family: Dongle;
     font-size: 30px;
     color: pink;
+  }
+  .div2 {
+    width: 300px;
   }
 }
 /****************************** THIS IS FOR MOBILE ******************************/
