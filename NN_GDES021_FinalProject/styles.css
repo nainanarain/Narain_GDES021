@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Roboto:wght@100;300;400&display=swap");
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+/*****FONT STYLE FOR EACH PAGE*****/
+html {
+  font-family: Roboto;
+}
+/*****FONT STYLE FOR EACH PAGE*****/
+
+/*****FORMATING FOR NAV BAR*****/
+nav {
+  text-align: center;
+  margin-bottom: 75px;
+  font-size: 25px;
+}
+
+li {
+  display: inline;
+  margin: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: deeppink;
+  text-decoration: none;
+}
+a:visited {
+  color: palevioletred;
+}
+a:hover {
+  color: deeppink;
+  text-decoration: underline;
+}
+a:active {
+  color: deeppink;
+}
+
+/*****FORMATING FOR NAV BAR*****/
+
+h1 {
+  font-size: 50px;
+  border-top: 5px solid whitesmoke;
+  border-bottom: 5px solid whitesmoke;
+  padding: 20px;
+  text-align: center;
+  margin: 5% 20%;
+  border-radius: 10px;
+}
+
+img {
+  height: 550px;
+  width: 375px;
+  display: block;
+  margin: auto;
+  box-shadow: 5px 5px 5px 5px #777777;
+}
+
+.info {
+  font-size: 20px;
+}
+
+.listitems {
+  list-style-type: none;
+}
+
+.bio {
+  font-size: 16px;
+  background-color: lavenderblush;
+  color: rgb(175, 131, 131);
+  text-shadow: 2px 2px 4px #ccabab;
+}
+
+.contact {
+  text-align: center;
+  font-family: Dongle;
+  font-size: 48px;
+  color: pink;
+}
+
+footer {
+  font-size: 16px;
+  background-color: lavenderblush;
+  color: rgb(175, 131, 131);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  flex-flow: row wrap;
+  padding: 5%;
+}
+
+/****************************** THIS IS FOR TABLETS ******************************/
+
+@media (min-width: 481px) and (max-width: 768px) {
+  h1 {
+    font-size: 40px;
+  }
+  p {
+    font-size: 15px;
+  }
+
+  img {
+    height: 450px;
+    width: 300px;
+    display: block;
+    margin: auto;
+    box-shadow: 5px 5px 5px 5px #777777;
+  }
+
+  .info {
+    font-size: 15px;
+  }
+
+  .contact {
+    text-align: center;
+    font-family: Dongle;
+    font-size: 38px;
+    color: pink;
+  }
+}
+/****************************** THIS IS FOR TABLETS ******************************/
+
+/****************************** THIS IS FOR MOBILE ******************************/
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 25px;
+  }
+  p {
+    font-size: 12px;
+  }
+  img {
+    height: 300px;
+    width: 205px;
+    display: block;
+    margin: auto;
+    box-shadow: 5px 5px 5px 5px #777777;
+  }
+  .info {
+    font-size: 12px;
+  }
+  .contact {
+    text-align: center;
+    font-family: Dongle;
+    font-size: 30px;
+    color: pink;
+  }
+}
+/****************************** THIS IS FOR MOBILE ******************************/
