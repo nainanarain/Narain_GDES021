@@ -162,15 +162,15 @@ h2 {
 }
 
 .research-poster-left {
-  width: 800px;
-  height: 600px;
+  width: 650px;
+  height: 500px;
   float: left;
   margin: 2%;
 }
 
 .research-poster-right {
-  width: 800px;
-  height: 600px;
+  width: 650px;
+  height: 500px;
   float: right;
   margin: 2%;
 }
@@ -198,7 +198,7 @@ h2 {
 /** FOR CONTACT PAGE END**/
 /****************************** THIS IS FOR TABLETS ******************************/
 
-@media (min-width: 581px) and (max-width: 868px) {
+@media (min-width: 481px) and (max-width: 768px) {
   h1 {
     font-size: 75px;
   }
@@ -238,12 +238,12 @@ h2 {
   }
 
   .research-poster-left {
-    width: 650px;
-    height: 433px;
+    width: 500px;
+    height: 350px;
   }
   .research-poster-right {
-    width: 650px;
-    height: 433px;
+    width: 500px;
+    height: 350px;
   }
   .about-me-pic {
     height: 350px;
@@ -254,7 +254,7 @@ h2 {
 
 /****************************** THIS IS FOR MOBILE ******************************/
 
-@media (max-width: 580px) {
+@media (max-width: 480px) {
   h1 {
     font-size: 60px;
   }
@@ -294,12 +294,12 @@ h2 {
   }
 
   .research-poster-left {
-    width: 500px;
-    height: 325px;
+    width: 350px;
+    height: 225px;
   }
   .research-poster-right {
-    width: 500px;
-    height: 325px;
+    width: 350px;
+    height: 225px;
   }
 
   .about-me-pic {
