@@ -13,7 +13,7 @@ html {
 }
 /*****FONT STYLE FOR EACH PAGE*****/
 
-/*****FORMATING FOR NAV BAR*****/
+/*****FORMATING FOR NAV BAR BEGIN*****/
 nav {
   text-align: center;
   margin: 50px;
@@ -45,15 +45,16 @@ a:active {
   color: deeppink;
 }
 
-/*****FORMATING FOR NAV BAR*****/
+/*****FORMATING FOR NAV BAR END*****/
+
+/** FORMATTING FOR HOMEPAGE BEGIN **/
 
 h1 {
   text-align: center;
-  margin: 50px;
-  margin-top: 75px;
   font-family: Dongle;
   color: rgb(128, 145, 216);
   font-size: 92px;
+  margin-bottom: -1px;
 }
 
 .page {
@@ -62,39 +63,49 @@ h1 {
   align-items: center;
 }
 
-.container {
-  margin: 50px auto;
-  width: 75%;
-  background-color: lavenderblush;
-  vertical-align: top;
-  border-radius: 10px;
-}
-
 .profile-pic {
   height: 500px;
   width: 340px;
   float: left;
-  margin: 5%;
-  padding: 1%;
-}
-
-.intro {
-  font-size: 30px;
-  color: rgb(107, 74, 74);
   margin: 1%;
   padding: 1%;
 }
 
-.info {
-  font-size: 20px;
+.intro {
+  font-size: 24px;
+  color: rgb(175, 131, 131);
+  margin: 1%;
+  padding: 1%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-.bio {
+.intro-text {
+  font-size: 24px;
+  background-color: lavenderblush;
+  color: rgb(141, 105, 105);
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+footer {
   font-size: 16px;
   background-color: lavenderblush;
   color: rgb(175, 131, 131);
-  text-shadow: 2px 2px 4px #ccabab;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  flex-flow: row wrap;
+  padding: 5%;
 }
+
+/** FORMATTING FOR HOMEPAGE END **/
+
+/** FORMATTING FOR PRODUCT PHOTOS BEGIN **/
 
 .gallery {
   display: flex;
@@ -113,6 +124,7 @@ h1 {
 
 .div2 {
   width: 700px;
+  font-size: 24px;
   background-color: lavenderblush;
   color: rgb(141, 105, 105);
   margin: 0 auto;
@@ -122,6 +134,60 @@ h1 {
   text-align: center;
 }
 
+/** FORMATTING FOR PRODUCT PHOTOS END **/
+
+/** FOR RESEARCH PAGE BEGIN **/
+
+h2 {
+  text-align: center;
+  margin: 10px;
+  margin-top: 20px;
+  font-family: Dongle;
+  line-height: 50%;
+  color: palevioletred;
+  font-size: 72px;
+  padding: 5px;
+}
+
+.left-project-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-project-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.research-poster-left {
+  width: 800px;
+  height: 600px;
+  float: left;
+  margin: 2%;
+}
+
+.research-poster-right {
+  width: 800px;
+  height: 600px;
+  float: right;
+  margin: 2%;
+}
+
+/** FOR RESEARCH PAGE END **/
+
+/** FOR ABOUT ME BEGIN**/
+.about-me-pic {
+  height: 500px;
+  width: 400px;
+  float: left;
+  margin: 1%;
+  padding: 1%;
+}
+/** FOR ABOUT ME END **/
+
+/** FOR CONTACT PAGE BEGIN**/
 .contact {
   text-align: center;
   font-family: Dongle;
@@ -129,47 +195,59 @@ h1 {
   color: pink;
 }
 
-footer {
-  font-size: 16px;
-  background-color: lavenderblush;
-  color: rgb(175, 131, 131);
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 50px;
-  flex-flow: row wrap;
-  padding: 5%;
-}
-
+/** FOR CONTACT PAGE END**/
 /****************************** THIS IS FOR TABLETS ******************************/
 
 @media (min-width: 581px) and (max-width: 868px) {
   h1 {
     font-size: 75px;
   }
-  /**
-  p {
-    font-size: 15px;
-  }
-  **/
 
   .profile-pic {
     height: 450px;
     width: 300px;
   }
 
-  .intro {
+  .intro-text {
     font-size: 20px;
   }
 
+  .page {
+    flex-direction: column;
+  }
+
   .contact {
-    text-align: center;
-    font-family: Dongle;
     font-size: 38px;
-    color: pink;
   }
 
   .div2 {
     width: 450px;
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 52px;
+  }
+
+  .left-project-page {
+    flex-direction: column;
+  }
+
+  .right-project-page {
+    flex-direction: column-reverse;
+  }
+
+  .research-poster-left {
+    width: 650px;
+    height: 433px;
+  }
+  .research-poster-right {
+    width: 650px;
+    height: 433px;
+  }
+  .about-me-pic {
+    height: 350px;
+    width: 270px;
   }
 }
 /****************************** THIS IS FOR TABLETS ******************************/
@@ -178,32 +256,55 @@ footer {
 
 @media (max-width: 580px) {
   h1 {
-    font-size: 40px;
+    font-size: 60px;
   }
-
-  /**
-  p {
-    font-size: 12px;
-  }
-  **/
 
   .profile-pic {
     height: 400px;
     width: 260px;
   }
 
-  .intro {
+  .intro-text {
     font-size: 16px;
   }
 
-  .contact {
-    text-align: center;
-    font-family: Dongle;
-    font-size: 30px;
-    color: pink;
+  .page {
+    flex-direction: column;
   }
+
+  .contact {
+    font-size: 30px;
+  }
+
   .div2 {
     width: 300px;
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  .left-project-page {
+    flex-direction: column;
+  }
+
+  .right-project-page {
+    flex-direction: column-reverse;
+  }
+
+  .research-poster-left {
+    width: 500px;
+    height: 325px;
+  }
+  .research-poster-right {
+    width: 500px;
+    height: 325px;
+  }
+
+  .about-me-pic {
+    height: 300px;
+    width: 220px;
   }
 }
 /****************************** THIS IS FOR MOBILE ******************************/
